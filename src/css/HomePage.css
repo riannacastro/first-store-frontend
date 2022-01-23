@@ -2,13 +2,23 @@ body {
     background-color: black;
 }
 
-.header {
+.homepage-cont {
+    color: white;
+    padding-top: 10%;
+    font-size: 18pt;
+}
+
+.homepage-card {
+    background-color: black;
     color: white;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    border: 5px solid #ffffff;
+    border: 6px solid #ffffff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px gray;
     padding: 20px;
 }
 
