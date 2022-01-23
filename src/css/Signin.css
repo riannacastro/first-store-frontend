@@ -1,0 +1,24 @@
+.signin {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #ffffff;
+    padding: 90px;
+}
+
+
+#signin-form {
+    justify-content: space-evenly;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+  padding: 40px;
+  left: 50%;
+    top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
