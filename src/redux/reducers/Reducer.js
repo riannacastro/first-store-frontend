@@ -1,16 +1,17 @@
-const initialState = {
-    items: []
-}
 
-function reducer(initialState, action) {
+function reducer(state = {items: []}, action) {
     switch(action.type) {
 
-        case "GET_ITEMS":
+        case "SET_ITEMS":
 
         return {
-            ...initialState,
+            ...state,
             items: action.payload
         };
+
+        default:
+            break;
+        
 
     }
 }
