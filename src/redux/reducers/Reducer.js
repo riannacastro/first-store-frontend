@@ -10,7 +10,7 @@ function reducer(state = {items: []}, action) {
         };
 
         default:
-            break;
+            return state;
         
 
     }
