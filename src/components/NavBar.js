@@ -15,6 +15,10 @@ export default function NavBar() {
                 id="home-link"
                 >All Items</NavLink>
                 <NavLink
+                to="/men"
+                id="home-link"
+                >Men</NavLink>
+                <NavLink
                 to="/women"
                 id="home-link"
                 >Women</NavLink>

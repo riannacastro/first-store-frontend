@@ -4,6 +4,7 @@ import Login from './components/user/Signin';
 import HomePageContainer from './home/HomePageContainer';
 import ItemsContainer from './components/items/ItemsContainer';
 import WomenItemsContainer from './components/women/WomenItemsContainer';
+import MenItemsContainer from './components/men/MenItemsContainer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/items" component={routerProps => < ItemsContainer routerProps={routerProps}/>}/>
         <Route path="/signin" component={Login} />
         <Route path="/women" component={WomenItemsContainer}/>
+        <Route path="/men" component={MenItemsContainer} />
       </Switch>
     </div>
   );
