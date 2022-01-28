@@ -6,6 +6,7 @@ function MenItemsCard(props) {
             <div className='card'>
                 <div className='contentBx'>
                     {props.name} - {props.price}
+                    <br />
                     <div className='a'>
                     <h3>Buy Now</h3>
                     </div>

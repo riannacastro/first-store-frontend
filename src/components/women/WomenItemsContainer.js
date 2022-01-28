@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { setItems } from '../../redux/actions/ItemsActions'
 import WomenItemsCard from './WomenItemsCard'
 import NavBar from '../NavBar'
-import '../../css/Default.css'
+
 
 
 class WomenItemsContainer extends Component {
@@ -21,7 +21,9 @@ class WomenItemsContainer extends Component {
             <div className='main-body'>
                 <NavBar />
               <h1>Women</h1>
-              {this.state.womenItems.map((i => <WomenItemsCard key={i.id} {...i}/>))}
+                <div className='content'>
+                    {this.state.womenItems.map((i => <WomenItemsCard key={i.id} {...i}/>))}
+                </div>
             </div>
         )
     }

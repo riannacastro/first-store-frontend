@@ -1,0 +1,82 @@
+.container {
+    position: relative;
+}
+
+.container .women-card {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container .women-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e959be;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.container .women-card:hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.container .women-card:after {
+    content: "WOMEN";
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 7em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+
+}
+
+.container .women-card .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: white;
+    transition: 1s;
+    z-index: 90;
+}
+
+.container .women-card:hover .contentBx {
+    height: 210px;
+}
+
+.container .women-card .contentBx h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.container .women-card .contentBx .a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: .5s;
+}
+
+.container .women-card:hover .contentBx .a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: .7s;
+} 
