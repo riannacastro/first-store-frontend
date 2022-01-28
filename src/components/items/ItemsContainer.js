@@ -17,7 +17,9 @@ class ItemsContainer extends Component {
             <div className='main-body'>
                 <NavBar />
               <h1>All Items</h1>
-              {this.props.items.map((i => <ItemsCard key={i.id} {...i}/>))}
+                <div className='content'>
+                    {this.props.items.map((i => <ItemsCard key={i.id} {...i}/>))}
+                </div>
             </div>
         )
     }
