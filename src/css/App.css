@@ -21,5 +21,7 @@
 }
 
 #home-link {
+  display: inline;
+  padding-right: 15px;
   color: white;
 }
