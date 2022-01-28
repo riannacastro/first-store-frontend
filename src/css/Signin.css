@@ -22,3 +22,16 @@
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
   border-radius: 10px;
 }
+
+.signup-link {
+  pointer-events: auto;
+	cursor: pointer;
+	background: #e7e7e7;
+	border: none;
+	padding: 1.5rem 3rem;
+	margin: 0px 0px 10px;
+	font-family: inherit;
+	font-size: inherit;
+	position: relative;
+	display: inline-block;
+}

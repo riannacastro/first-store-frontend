@@ -21,7 +21,9 @@ export default class Login extends Component {
                     < br />
                     <input type="submit" />
                 </form>
+                <div className='signup-link'>
                 Not a member? <Link to="/signup">Sign up now!</Link>
+                </div>
             </div>
         )
     }

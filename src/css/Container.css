@@ -2,6 +2,6 @@
   display: grid;
   margin: 40px 100px 120px 80px;
   padding-left: 150px; 
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 500px;
 }

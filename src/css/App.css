@@ -25,3 +25,11 @@
   padding-right: 15px;
   color: white;
 }
+
+#home-link:hover {
+  color:yellow
+}
+
+#home-link link:active {
+  color:yellow
+}
