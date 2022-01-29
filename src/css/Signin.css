@@ -1,13 +1,17 @@
-.signin {
-    color: white;
+/* .signin {
+    color: black;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     border: 5px solid #ffffff;
     padding: 90px;
-}
+} */
 
+.signin-header {
+  margin-top: 50px;
+  font-size: 20pt;
+}
 
 #signin-form {
     justify-content: space-evenly;
@@ -15,7 +19,7 @@
     position: absolute;
   padding: 40px;
   left: 50%;
-    top: 50%;
+    top: 30%;
   transform: translate(-50%, -50%);
   background: rgba(0,0,0,.5);
   box-sizing: border-box;
@@ -29,9 +33,11 @@
 	background: #e7e7e7;
 	border: none;
 	padding: 1.5rem 3rem;
-	margin: 0px 0px 10px;
+	margin: 0px 0px 0px;
 	font-family: inherit;
 	font-size: inherit;
-	position: relative;
+	position: absolute;
 	display: inline-block;
+  left: 42%;
+  top: 50%;
 }
