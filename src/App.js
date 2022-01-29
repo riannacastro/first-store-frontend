@@ -5,6 +5,7 @@ import HomePageContainer from './home/HomePageContainer';
 import ItemsContainer from './components/items/ItemsContainer';
 import WomenItemsContainer from './components/women/WomenItemsContainer';
 import MenItemsContainer from './components/men/MenItemsContainer';
+import SignUpForm from './components/user/SignUpForm';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route exact path="/" component={HomePageContainer}/>
         <Route path="/items" component={routerProps => < ItemsContainer routerProps={routerProps}/>}/>
         <Route path="/signin" component={Login} />
+        <Route path="/signup" component={SignUpForm} />
         <Route path="/women" component={WomenItemsContainer}/>
         <Route path="/men" component={MenItemsContainer} />
       </Switch>

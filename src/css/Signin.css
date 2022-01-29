@@ -8,9 +8,14 @@
     padding: 90px;
 } */
 
-.signin-header {
-  margin-top: 50px;
+.member-shop {
+  margin-top: 20px;
   font-size: 20pt;
+}
+
+.signin-header {
+  margin-top: 90px;
+  font-size: 13pt;
 }
 
 #signin-form {
@@ -19,7 +24,7 @@
     position: absolute;
   padding: 40px;
   left: 50%;
-    top: 30%;
+    top: 40%;
   transform: translate(-50%, -50%);
   background: rgba(0,0,0,.5);
   box-sizing: border-box;
@@ -39,5 +44,5 @@
 	position: absolute;
 	display: inline-block;
   left: 42%;
-  top: 50%;
+  top: 55%;
 }
