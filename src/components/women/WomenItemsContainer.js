@@ -9,7 +9,7 @@ import NavBar from '../NavBar'
 class WomenItemsContainer extends Component {
 
     state = {
-        womenItems: this.props.items.filter(women => women.category_id === 2)
+        womenItems: this.props.items.filter(women => women.category_id === 5)
     }
 
     componentDidMount() {

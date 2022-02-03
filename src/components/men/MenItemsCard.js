@@ -4,6 +4,7 @@ function MenItemsCard(props) {
     return (
         <div className='container'>
             <div className='card'>
+                <img src={props.image} alt='men' />
                 <div className='contentBx'>
                     {props.name} - {props.price}
                     <br />

@@ -8,7 +8,7 @@ import '../../css/Container.css'
 
 class MenItemsContainer extends Component {
     state = {
-        MenItems: this.props.items.filter(men => men.category_id === 1)
+        MenItems: this.props.items.filter(men => men.category_id === 4)
     }
 
     componentDidMount() {

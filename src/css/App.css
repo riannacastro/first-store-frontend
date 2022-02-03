@@ -20,6 +20,19 @@
     justify-content: left;
 }
 
+.logo {
+  color: white;
+  padding-left: 28%;
+}
+
+.menu-session {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  right: 22px;
+  
+}
+
 #home-link {
   display: inline;
   padding-right: 15px;

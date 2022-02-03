@@ -22,10 +22,15 @@ export default function NavBar() {
                 to="/women"
                 id="home-link"
                 >Women</NavLink>
-                <NavLink
+                    <div className="logo">
+                            <h1>THE MEMBER SHOP</h1>
+                    </div>
+                   <div className="menu-session">
+                   <NavLink
                 to="/cart"
                 id="home-link"
                 >Cart</NavLink>
+                   </div>
             </div>
         </div>
     )

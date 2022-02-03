@@ -5,6 +5,9 @@ function ItemsCard(props) {
   return (
     <div className='container'>
             <div className='all-card'>
+              <div className='imgBx'>
+                <img src={props.image} alt='men' />
+            </div>
                 <div className='contentBx'>
                     {props.name} - {props.price}
                     <br />
