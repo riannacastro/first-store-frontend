@@ -27,6 +27,10 @@ export default function NavBar() {
                     </div>
                    <div className="menu-session">
                    <NavLink
+                to="/signin"
+                id="home-link"
+                >Sign In</NavLink>
+                   <NavLink
                 to="/cart"
                 id="home-link"
                 >Cart</NavLink>
