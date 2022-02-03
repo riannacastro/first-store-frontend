@@ -3,9 +3,12 @@
 }
 
 .nav{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   background: #000000;
-  height: 80px;
-  width: 100%;
+  /* height: 80px;
+  width: 100%; */
   text-decoration: none;
   box-sizing: border-box;
 }

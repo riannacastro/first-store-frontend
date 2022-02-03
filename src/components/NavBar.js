@@ -30,6 +30,10 @@ export default function NavBar() {
                 to="/signin"
                 id="home-link"
                 >Sign In</NavLink>
+                <NavLink
+                to="/favorites"
+                id="home-link"
+                >Favorites</NavLink>
                    <NavLink
                 to="/cart"
                 id="home-link"
