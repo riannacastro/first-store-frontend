@@ -6,17 +6,21 @@ import KidItemsCard from './KidItemsCard';
 
 class KidItemsContainer extends Component {
 
+    state = {
+        kidsItems: this.props.items.filter(kids => kids.category_id === 6)
+    }
+
     componentDidMount() {
         this.props.setItems()
     }
 
 
   render() {
-    return <div>
+    return <div className='main-body'>
         <NavBar />
         <h1>KIDS' CLOTHING</h1>
-        <div>
-            {this.props.items.map((i => <KidItemsCard key={i.id} {...i} />))}
+        <div className='content'>
+            {this.state.kidsItems.map((i => <KidItemsCard key={i.id} {...i} />))}
         </div>
     </div>;
   }

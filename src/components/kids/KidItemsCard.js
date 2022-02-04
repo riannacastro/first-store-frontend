@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../css/AllCard.css'
 
 function KidItemsCard(props) {
   return <div className='container'>
