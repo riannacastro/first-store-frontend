@@ -8,6 +8,7 @@ export default class Login extends Component {
         username: "",
         password: ""
     }
+    
     render() {
         return (
             <div className='signin'>
@@ -16,7 +17,7 @@ export default class Login extends Component {
                 </div>
                 <div className='signin-header'>
                     <h1>Welcome Back!</h1>
-                    </div>
+                </div>
                 <form id="signin-form" onSubmit={this.handleSubmit}>
                     <h3>Please Sign In</h3>
                     <label>Username: </label>
@@ -28,7 +29,7 @@ export default class Login extends Component {
                     <input type="submit" />
                 </form>
                 <div className='signup-link'>
-                Not a member? <Link to="/signup">Sign up now!</Link>
+                    Not a member? <Link to="/signup">Sign up now!</Link>
                 </div>
             </div>
         )
