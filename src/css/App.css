@@ -5,6 +5,7 @@
 .nav{
   position: -webkit-sticky;
   position: sticky;
+  z-index: 1;
   top: 0;
   background: #000000;
   /* height: 80px;

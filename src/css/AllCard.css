@@ -72,7 +72,6 @@
     text-align: center;
     color: white;
     transition: 1s;
-    z-index: 90;
 }
 
 .container .all-card:hover .contentBx {
