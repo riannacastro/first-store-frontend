@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { setItems } from '../../redux/actions/ItemsActions';
+import NavBar from '../NavBar';
 import KidItemsCard from './KidItemsCard';
 
 class KidItemsContainer extends Component {
 
     componentDidMount() {
-        
+        this.props.setItems()
     }
 
 
   render() {
     return <div>
-        < KidItemsCard />
+        <NavBar />
+        <h2>KIDS' CLOTHING</h2>
+        <div>
+            {this.props.items.map((i => <KidItemsCard key={i.id} {...i} />))}
+        </div>
     </div>;
   }
 }
