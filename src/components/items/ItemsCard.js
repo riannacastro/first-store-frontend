@@ -9,7 +9,7 @@ function ItemsCard(props) {
                 <img src={props.image} alt='men' />
             </div>
                 <div className='contentBx'>
-                    <h2>{props.name} - {props.price}</h2>
+                    <h3>{props.name} - {props.price}</h3>
                     <br />
                     <div className='a'>
                     <h3>Buy Now</h3>
