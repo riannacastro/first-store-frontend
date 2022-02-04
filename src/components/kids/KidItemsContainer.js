@@ -5,6 +5,10 @@ import KidItemsCard from './KidItemsCard';
 
 class KidItemsContainer extends Component {
 
+    componentDidMount() {
+        
+    }
+
 
   render() {
     return <div>
@@ -13,9 +17,15 @@ class KidItemsContainer extends Component {
   }
 }
 
+function mapStateToProps(state) {
+    return {
+        items: state.items
+    }
+}
+
 function mapDispatchToProps(dispatch) {
     return {
         setItems: () => dispatch(setItems())
     }
 }
-export default connect(null, mapDispatchToProps)(KidItemsContainer)
+export default connect(mapStateToProps, mapDispatchToProps)(KidItemsContainer)
