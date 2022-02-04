@@ -1,12 +1,15 @@
 import React from 'react';
-import '../../css/WomenCard.css'
+import '../../css/AllCard.css'
 
 function WomenItemsCard(props) {
   return (
     <div className='container'>
-            <div className='women-card'>
+            <div className='all-card'>
+              <div className='imgBx'>
+                <img src={props.image} alt='women' />
+              </div>
                 <div className='contentBx'>
-                    {props.name} - {props.price}
+                    <h2>{props.name} - {props.price}</h2>
                     <br />
                     <div className='a'>
                     <h3>Buy Now</h3>

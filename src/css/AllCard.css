@@ -78,9 +78,10 @@
     height: 210px;
 }
 
-.container .all-card .contentBx h3 {
+.container .all-card .contentBx h2 {
     position: relative;
     font-weight: 500;
+    font-size: 14pt;
     letter-spacing: .5px;
     color: #fff;
 }

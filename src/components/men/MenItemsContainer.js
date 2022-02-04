@@ -19,7 +19,7 @@ class MenItemsContainer extends Component {
         return (
             <div className='main-body'>
                 <NavBar />
-                <h1>Men</h1>
+                <h1>MEN'S CLOTHES</h1>
                 <div className='content'>
                 {this.state.MenItems.map((i => <MenItemsCard key={i.id} {...i}/>))}
               </div>

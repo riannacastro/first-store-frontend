@@ -20,7 +20,7 @@ class WomenItemsContainer extends Component {
         return (
             <div className='main-body'>
                 <NavBar />
-              <h1>Women</h1>
+              <h1>WOMEN'S CLOTHING</h1>
                 <div className='content'>
                     {this.state.womenItems.map((i => <WomenItemsCard key={i.id} {...i}/>))}
                 </div>
