@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import KidItemsCard from './KidItemsCard';
 
-export default class KidItemsContainer extends Component {
+class KidItemsContainer extends Component {
+
+
   render() {
     return <div>
-        kids
+        < KidItemsCard />
     </div>;
   }
 }
+export default connect()(KidItemsContainer)
