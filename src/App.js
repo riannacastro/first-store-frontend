@@ -7,6 +7,7 @@ import WomenItemsContainer from './components/women/WomenItemsContainer';
 import MenItemsContainer from './components/men/MenItemsContainer';
 import SignUpForm from './components/user/SignUpForm';
 import Favorites from './components/Favorites';
+import KidItemsContainer from './components/kids/KidItemsContainer';
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
         <Route path="/items" component={routerProps => < ItemsContainer routerProps={routerProps}/>}/>
         <Route path="/signin" component={Login} />
         <Route path="/signup" component={SignUpForm} />
-        <Route path="/women" component={WomenItemsContainer}/>
         <Route path="/men" component={MenItemsContainer} />
+        <Route path="/women" component={WomenItemsContainer}/>
+        <Route path="/kids" component={KidItemsContainer} />
         <Route path="/favorites" component={Favorites} />
       </Switch>
     </div>
