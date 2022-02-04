@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { setItems } from '../../redux/actions/ItemsActions';
 import KidItemsCard from './KidItemsCard';
 
 class KidItemsContainer extends Component {
@@ -11,4 +12,10 @@ class KidItemsContainer extends Component {
     </div>;
   }
 }
-export default connect()(KidItemsContainer)
+
+function mapDispatchToProps(dispatch) {
+    return {
+        setItems: () => dispatch(setItems())
+    }
+}
+export default connect(null, mapDispatchToProps)(KidItemsContainer)
