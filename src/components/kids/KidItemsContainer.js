@@ -14,7 +14,7 @@ class KidItemsContainer extends Component {
   render() {
     return <div>
         <NavBar />
-        <h2>KIDS' CLOTHING</h2>
+        <h1>KIDS' CLOTHING</h1>
         <div>
             {this.props.items.map((i => <KidItemsCard key={i.id} {...i} />))}
         </div>
