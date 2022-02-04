@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../css/AllCard.css'
 
 function WomenItemsCard(props) {
   return (
