@@ -8,7 +8,13 @@ export default class Login extends Component {
         username: "",
         password: ""
     }
-    
+
+    handleChange = (e) => {
+       this.setState({
+           [e.target.name]: e.target.value
+       })
+    }
+
     render() {
         return (
             <div className='signin'>
