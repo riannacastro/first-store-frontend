@@ -2,6 +2,11 @@ import React from 'react';
 import '../../css/AllCard.css'
 
 function ItemsCard(props) {
+
+  const item = () => {
+    props.handleClick(item.id)
+  }
+
   return (
     <div className='container'>
             <div className='all-card'>
@@ -12,7 +17,7 @@ function ItemsCard(props) {
                     <h2>{props.name} - {props.price}</h2>
                     <br />
                     <div className='a'>
-                    <h3>Buy Now</h3>
+                    <button id="h3" onClick={handleClick}>Buy Now</button>
                     </div>
                 </div>
             </div>

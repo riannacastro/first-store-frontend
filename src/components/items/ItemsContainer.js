@@ -12,13 +12,17 @@ class ItemsContainer extends Component {
         this.props.setItems()
     }
 
+    handleClick = (id) => {
+        this.props.addToCart(id)
+    }
+
     render() {
         return (
             <div className='main-body'>
                 <NavBar />
               <h1>ALL STREETWEAR</h1>
                 <div className='content'>
-                    {this.props.items.map((i => <ItemsCard key={i.id} {...i}/>))}
+                    {this.props.items.map((i => <ItemsCard key={i.id} handleClick={this.handleClick} {...i}/>))}
                 </div>
             </div>
         )
@@ -32,7 +36,8 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        setItems: () => dispatch(setItems())
+        setItems: () => dispatch(setItems()),
+        addToCart: () => dispatch(addToCart())
     }
 }
 
