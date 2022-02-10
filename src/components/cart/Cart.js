@@ -4,11 +4,13 @@ export default class Cart extends Component {
 
     state = {
         items: [
-            
+
         ]
     }
 
   render() {
-    return <div></div>;
+    return <div>
+        
+    </div>;
   }
 }
