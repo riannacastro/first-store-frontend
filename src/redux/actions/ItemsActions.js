@@ -5,3 +5,10 @@ export const setItems = () => {
         .then(data => dispatch({type: "SET_ITEMS", payload: data}))
     }
 }
+
+export const addToCart = (id) => {
+    return {
+        type: "ADD_TO_CART",
+        id
+    }
+}
