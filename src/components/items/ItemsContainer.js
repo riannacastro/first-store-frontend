@@ -12,9 +12,6 @@ class ItemsContainer extends Component {
         this.props.setItems()
     }
 
-    handleClick = (id) => {
-        this.props.addToCart(id)
-    }
 
     render() {
         return (
@@ -22,7 +19,7 @@ class ItemsContainer extends Component {
                 <NavBar />
               <h1>ALL STREETWEAR</h1>
                 <div className='content'>
-                    {this.props.items.map((i => <ItemsCard key={i.id} handleClick={this.handleClick} {...i}/>))}
+                    {this.props.items.map((i => <ItemsCard key={i.id} handleClick={addToCart()} {...i}/>))}
                 </div>
             </div>
         )

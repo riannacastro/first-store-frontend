@@ -9,6 +9,14 @@ function reducer(state = {items: []}, action) {
             items: action.payload
         };
 
+        case "ADD_TO_CART":
+            
+        return {
+            ...state,
+            cart: [...state.cart, action.payload.id],
+            total: state.total + action.payload.price
+        }
+
         default:
             return state;
         

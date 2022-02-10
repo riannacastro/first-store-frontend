@@ -6,9 +6,9 @@ export const setItems = () => {
     }
 }
 
-export const addToCart = (id) => {
+export const addToCart = (item) => {
     return {
         type: "ADD_TO_CART",
-        id
+        payload: item
     }
 }

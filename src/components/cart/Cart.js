@@ -1,16 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class Cart extends Component {
-
-    state = {
-        items: [
-
-        ]
-    }
-
-  render() {
-    return <div>
-        
-    </div>;
-  }
+export default function Cart() {
+  return <div>
+      <ul>
+          {props.cart.map(cartItem => {
+              const item = props.items.find(i => i.id === cartItem)
+              return <li key={cartItem}>{item.name}</li>
+          })}
+      </ul>
+  </div>;
 }
+
