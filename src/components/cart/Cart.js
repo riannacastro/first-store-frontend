@@ -1,13 +1,27 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { bindActionCreators } from 'redux';
 
-export default function Cart() {
-  return <div>
-      <ul>
-          {props.cart.map(cartItem => {
-              const item = props.items.find(i => i.id === cartItem)
-              return <li key={cartItem}>{item.name}</li>
-          })}
-      </ul>
-  </div>;
+export default class Cart extends Component {
+
+    state = {
+        items: [
+            {
+                name: shirt,
+                price: 20
+            },
+            {
+                name: boots,
+                price: 49
+            }
+        ],
+        total: 0
+    }
+
+
+  render() {
+    return <div>
+        {this.state.total}
+    </div>;
+  }
 }
 

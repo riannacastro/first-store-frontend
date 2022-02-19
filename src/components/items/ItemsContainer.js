@@ -12,6 +12,10 @@ class ItemsContainer extends Component {
         this.props.setItems()
     }
 
+    addToCart = () => {
+        
+    }
+
 
     render() {
         return (
